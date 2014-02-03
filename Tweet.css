@@ -1,6 +1,6 @@
 * {
     font-family: Helvetica, Arial, sans-serif;
-    color: #3f3e3d;
+    color: #000000;
 }
 body {
   background: #000000 url('/Resource/gfx/bg.png');
@@ -108,12 +108,13 @@ nav{
   float: right;
 }
 #content div.wrapper div.panel.right textarea.tweetText {
-  width: 249px;
+  width:549px;
   height: 160px;
-  border: 1px solid #d2d2d2;
+  border: 1px solid #d2d2d2
 }
 #content div.wrapper div.panel.left {
   width: 533px;
+  height: 400px;
   float: left;
 }
 #content div.wrapper div.panel.left div.tweetWrapper {
@@ -146,8 +147,8 @@ nav{
   text-shadow: #3f3e3d 0 0 1px;
 }
 #content div.wrapper div.panel.left div.tweetWrapper p span.spacing {
-  padding-left: 9px;
-  margin-left: 9px;
+  padding-left: 15px;
+  margin-left: 15px;
   height: 10px;
   border-left: 1px solid #d2d2d2;
 }

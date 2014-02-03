@@ -14,7 +14,7 @@ class Flash{
     }
     
     public function display(){
-        echo "<div class=\"flash " . $this->type . "\">" . $this->msg . "</div>";
+	// echo "<div class=\"flash " . $this->type . "\">" . $this->msg . "</div>";
     }
 }
 
@@ -177,14 +177,15 @@ class Controller{
             $flash = false;
             if(isset($params[0]))
             {
-                $flashArr = array(
-                    "0" => new Flash("Welcome Back, " . $user->name, "notice"),
-                    "1" => new Flash("Welcome to Tweet, Thanks for signing up.", "notice"),
+
+   /*             $flashArr = array(
+                    "0" => new Flash("Hey " . $user->name, "notice"),
+                    "1" => new Flash("Welcome to Tweeter, Thanks for signing up.", "notice"),
                     "2" => new Flash("You have exceeded the 140 character limit for Tweets", "error")
                 );
                 $flash = $flashArr[$params[0]];
-            }
-            $this->loadPage($user, "friends", array('User' => $user, "userData" => $userData, "ftweets" => $ftweets), $flash);
+         */   }
+            $this->loadPage($user, "friends", array('User' => $user, "userData" => $userData, "ftweets" => $ftweets), false);
         }
     }
     

@@ -1,30 +1,34 @@
-<div id="createTweet" class="panel right">
-    <h1>Create a Tweet</h1>
+<div id="createTweet" class="panel left"><!--KEVIN I changed this to pannel left-->
+    <h1>Let's Tweet</h1>
     <p>
         <form action="/tweet" method="post">
             <textarea name="text" class="tweetText"></textarea>
+	    <br>
             <input type="submit" value="Tweet!">
         </form>
     </p>
 </div>
-        <div id="tweets" class="panel left">
-				<h1>Your Tweet Profile</h1>
+	<div id="tweets" class="panel right"><!--KEVIN changed to pannel right -JC-->
+				<h1>Tweeter Profile</h1>
 				<div class="tweetWrapper">
-					<img class="avatar" src="http://www.gravatar.com/avatar/<?php echo $User->gravatar_hash; ?>">
-					<span class="name"><?php echo $User->name; ?></span> @<?php echo $User->username; ?>
+					<img class="avatar" src="/Resource/gfx/user.jpg">
+					<span class="name"><?php echo"<b>"; echo $User->name; ?></span> @<?php echo $User->username; echo "</b>" ?>
 					<p>
 						<?php echo $userData->tweet_count . " "; echo ($userData->tweet_count != 1) ? "Tweets" : "Tweet"; ?>
+<?php echo "<br>"; ?>
+
                         <span class="spacing"><?php echo $userData->followers . " "; echo ($userData->followers != 1) ? "Followers" : "Follower"; ?></span>
-                        <span class="spacing"><?php echo $userData->following . " Following"; ?></span><br>
-						<?php echo $userData->tweet; ?>
+<?php echo "<br>"; ?>     
+                   <span class="spacing"><?php echo $userData->following . " Following"; ?></span><br>
+						<!--?php echo $userData->tweet; ?-->
 					</p>
 				</div>
 			</div>
 			<div class="panel left">
-				<h1>Your Tweet Friends</h1>
+				<h1>Tweets from your Friends</h1>
                 <?php foreach($ftweets as $tweet){ ?>
 		                <div class="tweetWrapper">
-		                    <img class="avatar" src="http://www.gravatar.com/avatar/<?php echo $tweet->gravatar_hash; ?>">
+		                    <img class="avatar" src="/Resource/gfx/user.jpg">
 		                    <span class="name"><?php echo $tweet->name; ?></span> @<?php echo $tweet->username; ?> 
 	                        <span class="time">
 	                        <?php 

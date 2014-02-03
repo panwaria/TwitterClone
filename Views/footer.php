@@ -1,10 +1,10 @@
 
 		</div>
 	</div>	
-    <footer>
+    <!--<footer>
 		<div class="wrapper">
-			Tweeter - A Twitter Clone<img src="/Resource/gfx/logo.png">
+			Tweeter - Connecting People!<img src="/Resource/gfx/logo_sm.png">
 		</div>
-	</footer>
+	</footer>-->
 </body>
 </html>

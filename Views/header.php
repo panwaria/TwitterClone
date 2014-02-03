@@ -7,21 +7,23 @@
 <body>
 	<header>
 		<div class="wrapper">
-			<img src="/Resource/gfx/logo.png">
+			<a href="/home">
+				<img src="/Resource/gfx/logo.png">
+			</a>
 			<?php if($User !== false){ ?>
                 <nav>
-                    <a href="/friends">Your Friends</a>
-                    <a href="/public">Public Tweets</a>
+                    <a href="/friends">Home</a>
+                    <a href="/public">Tweets</a>
                     <a href="/profiles">Profiles</a>
                 </nav>
                 <form action="/logout" method="get">
-                    <input type="submit" id="btnLogOut" value="Log Out">
+                    <input type="submit" id="btnLogOut" value="Sign Out">
                 </form>
             <?php }else{ ?>
                 <form method="post" action="/login">
                     <input name="username" type="text" placeholder="username">
                     <input name="password" type="password" placeholder="password">
-                    <input type="submit" id="btnLogIn" value="Log In">
+                    <input type="submit" id="btnLogIn" value="Sign In">
                 </form>
             <?php } ?>
 		</div>
