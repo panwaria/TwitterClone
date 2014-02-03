@@ -8,7 +8,6 @@
 	<header>
 		<div class="wrapper">
 			<img src="/Resource/gfx/logo.png">
-			<span>Twitter Clone</span>
 			<?php if($User !== false){ ?>
                 <nav>
                     <a href="/friends">Your Friends</a>

@@ -1,7 +1,7 @@
 
 			<img src="/Resource/gfx/splash.png">
 			<div class="panel right">
-				<h1>New to Tweet?</h1>
+				<h1>New to Tweeter?</h1>
 				<p>
 					<form action="/signup" method="post">
 						<input name="email" type="text" placeholder="Email">

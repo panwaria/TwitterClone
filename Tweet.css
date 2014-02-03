@@ -3,7 +3,7 @@
     color: #3f3e3d;
 }
 body {
-  background: #ffffff url('/Resource/gfx/bg.png');
+  background: #000000 url('/Resource/gfx/bg.png');
   margin: 0;
   padding: 0;
 }
